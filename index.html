@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarinexIQ - The Smart Maritime Future</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-default">
+  <div class="dark-toggle">
+    <button class="btn btn-sm" id="theme-cycle-button" aria-label="Cycle Theme"></button>
+  </div>
+  <div class="lang-dropdown dropdown">
+    <button class="btn btn-sm dropdown-toggle" type="button" id="lang-dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fas fa-globe"></i> <span id="language-name-display">Language</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="lang-dropdown-btn">
+      <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="ar">العربية</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="hi">हिन्दी</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="fil">Filipino</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="zh">中文</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="ru">Русский</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="uk">Українська</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="id">Bahasa Indonesia</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="tr">Türkçe</a></li>
+    </ul>
+  </div>
+
+  <header class="hero-section text-center text-white">
+    <div class="video-background-holder">
+        <div class="video-background-overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="heroVideo">
+            <source src="assets/video.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="container hero-content">
+        <div data-aos="fade-up">
+            <div id="lottie-logo-main" class="hero-logo mb-3" data-key-alt="hero_logo_alt"></div>
+            <h1 class="display-2 fw-bolder" id="main-headline-typed"></h1>
+            <p class="lead fs-3 my-4" data-key="sub_headline_v2"></p>
+        </div>
+        <div class="countdown-dramatic my-5" data-aos="fade-up" data-aos-delay="200">
+            <h2 class="fw-light" data-key="countdown_title_dramatic"></h2>
+            <div id="countdown-timer-dramatic" class="mb-3">
+                <span class="timer-segment"><span id="days">00</span> <span data-key="countdown_days"></span></span>
+                <span class="timer-segment"><span id="hours">00</span> <span data-key="countdown_hours"></span></span>
+                <span class="timer-segment"><span id="minutes">00</span> <span data-key="countdown_minutes"></span></span>
+                <span class="timer-segment"><span id="seconds">00</span> <span data-key="countdown_seconds"></span></span>
+            </div>
+            <p class="lead fs-5 countdown-offer" data-key="countdown_offer_text"></p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400">
+            <a href="#subscription-section-landing" class="btn btn-primary btn-lg hero-cta-button" data-key="hero_join_now_button"></a>
+        </div>
+    </div>
+  </header>
+
+  <main class="container page-content-container">
+    <section class="ai-stats-counter-section text-center" data-aos="fade-up">
+        <h2 class="section-title" data-key="ai_counter_title"></h2>
+        <div class="row">
+            <div class="col-md-3 col-6 mb-4"><div class="ai-stat-item"><i class="fas fa-users-cog fa-2x text-primary mb-2"></i><h3 id="total-seafarers-count-dynamic" class="fw-bold">0</h3><p data-key="ai_counter_total_seafarers"></p></div></div>
+            <div class="col-md-3 col-6 mb-4"><div class="ai-stat-item"><i class="fas fa-user-tie fa-2x text-info mb-2"></i><h3 id="deck-officers-count-dynamic" class="fw-bold">0</h3><p data-key="ai_counter_deck_officers"></p></div></div>
+            <div class="col-md-3 col-6 mb-4"><div class="ai-stat-item"><i class="fas fa-cogs fa-2x text-success mb-2"></i><h3 id="engine-officers-count-dynamic" class="fw-bold">0</h3><p data-key="ai_counter_engine_officers"></p></div></div>
+            <div class="col-md-3 col-6 mb-4"><div class="ai-stat-item"><i class="fas fa-briefcase fa-2x text-warning mb-2"></i><h3 id="ready-to-work-count-dynamic" class="fw-bold">0</h3><p data-key="ai_counter_ready_to_work"></p></div></div>
+        </div>
+    </section>
+
+    <section class="mission-section" data-aos="fade-right">
+        <img src="assets/founder-image.png" alt="MarinexIQ Founder" class="mission-image" data-key-alt="founder_image_alt"> <div><h3 data-key="mission_title"></h3><p data-key="mission_text"></p></div>
+    </section>
+
+    <section class="ai-value-section" data-aos="fade-left">
+      <h2 class="text-center mb-5 section-title" data-key="ai_value_title"></h2>
+      <div class="row gy-4">
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in"><div class="ai-feature-card"><div class="ai-feature-icon" id="lottie-cv" data-key-alt="lottie_cv_placeholder"></div><h5 data-key="ai_feature_cv_title"></h5><p data-key="ai_feature_cv_desc"></p></div></div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100"><div class="ai-feature-card"><div class="ai-feature-icon" id="lottie-jobs" data-key-alt="lottie_jobs_placeholder"></div><h5 data-key="ai_feature_jobs_title"></h5><p data-key="ai_feature_jobs_desc"></p></div></div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"><div class="ai-feature-card"><div class="ai-feature-icon" id="lottie-interview" data-key-alt="lottie_interview_placeholder"></div><h5 data-key="ai_feature_interview_title"></h5><p data-key="ai_feature_interview_desc"></p></div></div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300"><div class="ai-feature-card"><div class="ai-feature-icon" id="lottie-certs" data-key-alt="lottie_certs_placeholder"></div><h5 data-key="ai_feature_certs_title"></h5><p data-key="ai_feature_certs_desc"></p></div></div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400"><div class="ai-feature-card"><div class="ai-feature-icon" id="lottie-score" data-key-alt="lottie_score_placeholder"></div><h5 data-key="ai_feature_score_title"></h5><p data-key="ai_feature_score_desc"></p></div></div>
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500"><div class="ai-feature-card"><div class="ai-feature-icon" id="lottie-support" data-key-alt="lottie_support_placeholder"></div><h5 data-key="ai_feature_support_title"></h5><p data-key="ai_feature_support_desc"></p></div></div>
+      </div>
+    </section>
+
+    <section class="smart-test-section text-center" data-aos="fade-up">
+        <h2 class="section-title" data-key="smart_test_title"></h2>
+        <p class="lead mb-4" data-key="smart_test_subtitle"></p>
+        <button type="button" class="btn btn-warning btn-lg hero-cta-button" data-bs-toggle="modal" data-bs-target="#readinessTestModal" data-key="smart_test_button"></button>
+    </section>
+    
+    <section class="job-map-section text-center" data-aos="fade-up">
+        <h2 class="section-title" data-key="job_map_title"></h2>
+        <p class="lead mb-4" data-key="job_map_subtitle"></p>
+        <div id="jobMap" class="job-map-container"></div>
+        <small data-key="job_map_note"></small>
+    </section>
+
+    <section class="salary-calculator-section" data-aos="zoom-in-up">
+        <h2 class="section-title text-center" data-key="salary_calc_title"></h2>
+        <p class="text-center mb-4" data-key="salary_calc_subtitle"></p>
+        <div class="calculator-form mx-auto" style="max-width: 700px;">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-5"><label for="rank-select-salary" class="form-label" data-key="salary_calc_rank_label"></label><select id="rank-select-salary" class="form-select form-select-lg"><option value="" data-key="salary_calc_rank_placeholder"></option><option value="chief_mate" data-key="salary_calc_rank_co"></option><option value="second_mate" data-key="salary_calc_rank_2o"></option><option value="third_mate" data-key="salary_calc_rank_3o"></option><option value="chief_engineer" data-key="salary_calc_rank_ce"></option><option value="second_engineer" data-key="salary_calc_rank_2e"></option><option value="third_engineer" data-key="salary_calc_rank_3e"></option><option value="eto" data-key="salary_calc_rank_eto"></option><option value="bosun" data-key="salary_calc_rank_bosun"></option><option value="ab" data-key="salary_calc_rank_ab"></option><option value="os" data-key="salary_calc_rank_os"></option><option value="motorman" data-key="salary_calc_rank_motorman"></option><option value="cook" data-key="salary_calc_rank_cook"></option></select></div>
+                <div class="col-md-4"><label for="experience-input-salary" class="form-label" data-key="salary_calc_exp_label"></label><input type="number" id="experience-input-salary" class="form-control form-control-lg" min="0" max="40" value="5"></div>
+                <div class="col-md-3"><button id="calculate-salary-btn" class="btn btn-primary btn-lg w-100" data-key="salary_calc_button"></button></div>
+            </div>
+            <div id="salary-result" class="salary-result-container mt-4 text-center" style="display: none;"><p data-key="salary_calc_result_prefix"></p><h3 id="estimated-salary" class="display-5 fw-bold"></h3><small data-key="salary_calc_disclaimer"></small></div>
+        </div>
+    </section>
+
+    <section class="trust-section" data-aos="fade-up">
+        <h2 class="text-center mb-5 section-title" data-key="trust_section_title"></h2>
+        <div class="row text-center gy-4">
+            <div class="col-md-3" data-aos="flip-left"><div class="stat-item-trust"><i class="fas fa-users fa-3x mb-2"></i><h4 class="highlight" data-key="stat_global_seafarers_value"></h4><p data-key="stat_global_seafarers_label"></p></div></div>
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="100"><div class="stat-item-trust"><i class="fas fa-flag fa-3x mb-2"></i><h4 class="highlight" data-key="stat_active_nationalities_value"></h4><p data-key="stat_active_nationalities_label"></p></div></div>
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="200"><div class="stat-item-trust"><i class="fas fa-ship fa-3x mb-2"></i><h4 class="highlight" data-key="stat_vessel_types_value"></h4><p data-key="stat_vessel_types_label"></p></div></div>
+            <div class="col-md-3" data-aos="flip-left" data-aos-delay="300"><div class="stat-item-trust"><i class="fas fa-file-excel fa-3x mb-2"></i><h4 class="highlight" data-key="stat_expiring_certs_value"></h4><p data-key="stat_expiring_certs_label"></p></div></div>
+        </div>
+        <div class="testimonials mt-5" data-aos="fade-up">
+            <h3 class="text-center mb-4" data-key="testimonials_title"></h3>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right"><div class="testimonial-card"><p data-key="testimonial_1_text"></p><footer data-key="testimonial_1_author"></footer></div></div>
+                <div class="col-md-6" data-aos="fade-left"><div class="testimonial-card"><p data-key="testimonial_2_text"></p><footer data-key="testimonial_2_author"></footer></div></div>
+            </div>
+        </div>
+        <div class="partners mt-5 text-center" data-aos="fade-up">
+            <h3 class="mb-4" data-key="partners_title"></h3>
+            <img src="assets/partners.png" alt="Partners" class="img-fluid" data-key-alt="partners_logo_alt"> </div>
+    </section>
+    
+    <section id="subscription-section-landing" class="bg-primary text-white" data-aos="zoom-in-up">
+        <h2 class="section-title text-warning" data-key="enhanced_subscribe_title_v2"></h2>
+        <p data-key="early_access_desc_v2"></p>
+        <form id="subscription-form-landing" class="mx-auto" style="max-width: 600px;" novalidate>
+            <div class="mb-3"><input type="email" class="form-control form-control-lg" id="email-input-landing" data-key="email_placeholder_v2" required /></div>
+            <div class="mb-3"><input type="tel" class="form-control form-control-lg" id="phone-input-landing" data-key="phone_placeholder" required /></div>
+            <div class="mb-3">
+                <select class="form-select form-select-lg" id="role-select-landing" required>
+                    <option value="" data-key="role_select_option_placeholder"></option><option value="seafarer" data-key="role_seafarer"></option><option value="student" data-key="role_student"></option><option value="company" data-key="role_company"></option><option value="academy" data-key="role_academy"></option><option value="other" data-key="role_other"></option>
+                </select>
+            </div>
+            <div class="mb-3"><label for="comment-input-landing" class="form-label comment-prompt-text" data-key="comment_prompt_text"></label><textarea class="form-control form-control-lg" id="comment-input-landing" rows="3" data-key="comment_placeholder" required></textarea></div>
+            <button class="btn btn-warning btn-lg btn-subscribe-landing w-100" type="submit" data-key="subscribe_button_text_v2"></button>
+        </form>
+        <div id="form-status-container" class="mt-4 text-center" style="display: none;">
+            <div id="form-status-message" class="mb-3"></div>
+            <div id="smart-badge-container" class="smart-badge-wrapper" style="display: none;"><div id="lottie-smart-badge" class="smart-badge-icon" data-key-alt="lottie_smart_badge_placeholder"></div><h5 data-key="smart_badge_title"></h5><p data-key="smart_badge_text"></p></div>
+            <p class="mt-3" data-key="ai_personalized_alerts_text"></p>
+        </div>
+        <p class="mt-4 text-center" data-key="referral_text_placeholder_v2"></p>
+        <div class="text-center mt-3"><a href="#main-headline-typed" class="btn btn-outline-light recurring-join-button" data-key="hero_join_now_button_recurring"></a></div>
+    </section>
+
+    <section class="unique-selling-points" data-aos="fade-up">
+        <h2 class="text-center mb-5 section-title" data-key="usp_title"></h2>
+        <ul class="list-unstyled usp-list">
+            <li data-aos="fade-left"><i class="fas fa-check-circle text-success me-2"></i><span data-key="usp_item1"></span></li>
+            <li data-aos="fade-left" data-aos-delay="100"><i class="fas fa-check-circle text-success me-2"></i><span data-key="usp_item2"></span></li>
+            <li data-aos="fade-left" data-aos-delay="200"><i class="fas fa-check-circle text-success me-2"></i><span data-key="usp_item3"></span></li>
+            <li data-aos="fade-left" data-aos-delay="300"><i class="fas fa-check-circle text-success me-2"></i><span data-key="usp_item4"></span></li>
+        </ul>
+    </section>
+
+    <section class="nationalities-section text-center" data-aos="zoom-in">
+        <h3 data-key="nationalities_title"></h3>
+        <div class="flags-placeholder" data-key="flags_placeholder_text"></div>
+    </section>
+  </main>
+
+  <footer class="footer text-center">
+    <p data-key="contact_info"></p>
+    <p data-key="copyright_text"></p>
+  </footer>
+
+  <div class="modal fade" id="readinessTestModal" tabindex="-1" aria-labelledby="readinessTestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content theme-modal-content">
+            <div class="modal-header"><h5 class="modal-title" id="readinessTestModalLabel" data-key="smart_test_modal_title"></h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body">
+                <form id="readiness-test-form">
+                    <div class="mb-3"><label for="q1-readiness" class="form-label" data-key="smart_test_q1_label"></label><select class="form-select" id="q1-readiness" required><option value="" data-key="smart_test_q_select_option"></option><option value="coc" data-key="smart_test_q1_opt1"></option><option value="basic_stcw" data-key="smart_test_q1_opt2"></option><option value="none" data-key="smart_test_q1_opt3"></option></select></div>
+                    <div class="mb-3"><label for="q2-readiness" class="form-label" data-key="smart_test_q2_label"></label><select class="form-select" id="q2-readiness" required><option value="" data-key="smart_test_q_select_option"></option><option value="yes" data-key="smart_test_q2_opt1"></option><option value="no" data-key="smart_test_q2_opt2"></option></select></div>
+                    <div class="mb-3"><label for="q3-readiness" class="form-label" data-key="smart_test_q3_label"></label><select class="form-select" id="q3-readiness" required><option value="" data-key="smart_test_q_select_option"></option><option value="<1" data-key="smart_test_q3_opt1"></option><option value="1-3" data-key="smart_test_q3_opt2"></option><option value="3-5" data-key="smart_test_q3_opt3"></option><option value="5+" data-key="smart_test_q3_opt4"></option></select></div>
+                    <div class="mb-3"><label for="q4-readiness" class="form-label" data-key="smart_test_q4_label"></label><select class="form-select" id="q4-readiness" required><option value="" data-key="smart_test_q_select_option"></option><option value="officer" data-key="smart_test_q4_opt1"></option><option value="rating" data-key="smart_test_q4_opt2"></option><option value="student" data-key="smart_test_q4_opt3"></option></select></div>
+                    <div class="mb-3"><label for="q5-readiness" class="form-label" data-key="smart_test_q5_label"></label><select class="form-select" id="q5-readiness" required><option value="" data-key="smart_test_q_select_option"></option><option value="tanker" data-key="smart_test_q5_opt1"></option><option value="bulk" data-key="smart_test_q5_opt2"></option><option value="container" data-key="smart_test_q5_opt3"></option><option value="offshore" data-key="smart_test_q5_opt4"></option><option value="any" data-key="smart_test_q5_opt5"></option></select></div>
+                </form>
+                <div id="readiness-test-result" class="mt-4 p-3 border rounded" style="display: none;">
+                    <h4 data-key="smart_test_result_header"></h4>
+                    <p><strong data-key="smart_test_result_readiness_label"></strong> <span id="readiness-percentage" class="fw-bold"></span></p>
+                    <p><strong data-key="smart_test_result_company_fit_label"></strong> <span id="company-fit-suggestion"></span></p>
+                    <p><strong data-key="smart_test_result_recommendation_label"></strong> <span id="course-recommendation"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-key="smart_test_modal_close_button"></button><button type="button" class="btn btn-primary" id="calculate-readiness-modal-btn" data-key="smart_test_modal_calculate_button"></button></div>
+        </div>
+    </div>
+  </div>
+
+  <button id="open-ai-assistant-btn" class="btn btn-info ai-assistant-fab" aria-label="Open AI Assistant"><i class="fas fa-robot"></i><span class="ai-assistant-fab-text" data-key="ai_assistant_fab_text"></span></button>
+  <div id="ai-assistant-widget" class="ai-assistant-widget-container">
+    <div class="ai-assistant-header" id="ai-assistant-header-drag"><span data-key="ai_assistant_title"></span><button type="button" class="btn-close btn-close-white btn-sm" id="close-ai-assistant" aria-label="Close"></button></div>
+    <div class="ai-assistant-messages" id="ai-assistant-messages-container"></div>
+    <form id="ai-assistant-input-form" class="ai-assistant-input-area"><input type="text" id="ai-assistant-user-input" class="form-control" data-key="ai_assistant_input_placeholder" autocomplete="off"><button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i></button></form>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <script type="module" src="js/main.js" defer></script>
+</body>
+</html>

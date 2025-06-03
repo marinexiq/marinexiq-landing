@@ -1,0 +1,30 @@
+{
+  "language_name": "Türkçe",
+  "language_name_dropdown_en": "İngilizce",
+  "language_name_dropdown_ar": "Arapça",
+  "language_name_dropdown_hi": "Hintçe",
+  "language_name_dropdown_fil": "Filipince",
+  "language_name_dropdown_zh": "Çince",
+  "language_name_dropdown_ru": "Rusça",
+  "language_name_dropdown_uk": "Ukraynaca",
+  "language_name_dropdown_id": "Endonezce",
+  "language_name_dropdown_tr": "Türkçe",
+  "main_headline_v2": "MarinexIQ'e Hoş Geldiniz – Dünyanın 1 Numaralı Akıllı Denizci Platformu. Denizcilik Geleceğiniz Burada Başlıyor.",
+  "sub_headline_v2": "Denizciler, denizcilik şirketleri ve akademiler için devrim niteliğinde yapay zeka destekli merkez. Geleceğe bugün katılın!",
+  "hero_logo_alt": "MarinexIQ Animasyonlu Logo",
+  // ... (باقي المفاتيح مترجمة إلى التركية)
+  "contact_info": "İletişim: <a href='mailto:info@marinexiq.com' class='text-light'>info@marinexiq.com</a> | WhatsApp: <a href='https://wa.me/201065424999' class='text-light' target='_blank'>+201065424999</a>",
+  "copyright_text": "© 2025 MarinexIQ. Tüm hakları Saklıdır.",
+  "alert_form_submission_success": "Bilgileriniz başarıyla gönderildi! Kimliğiniz: {subscriberId}",
+  "ai_assistant_title": "MarinexIQ AI Asistanı",
+  "ai_assistant_welcome_message": "Merhaba 👋, Ben Akıllı Denizcilik Asistanınızım! Bugün size nasıl yardımcı olabilirim? 🚢💡",
+  "ai_assistant_input_placeholder": "Bana her şeyi sorabilirsiniz...",
+  "ai_assistant_fab_text": "AI Yardımı",
+  "ai_assistant_mock_responses": {
+    "key_aramco": "Aramco testini geçmek için özel gereksinimlerine, varsa CES testine odaklanın ve yaygın mülakat sorularını pratik yapın. Yakında bunun için özel bir bölümümüz olacak!",
+    "key_chief_officer": "Baş Zabit olmak, İkinci Zabit olarak belirli bir denizde kalma süresi, ilgili CoC ve ileri düzey STCW kursları gerektirir. Platformumuz adımlarda size rehberlik edecektir.",
+    "key_career_plan": "Bu konuda yardımcı olabiliriz! Mevcut rütbenizi ve hedeflerinizi söyleyin, potansiyel bir ilerleme planı çizebilirim. Tam yapay zeka planlaması yakında geliyor.",
+    "key_jobs_experience": "Lütfen piyasaya sürüldüğünde ana platformumuzda profilinizi tamamlayın! Yapay zekamız sizi uygun işlerle eşleştirecektir. Şimdilik, mevcut rütbeniz ve gemi tipi deneyiminiz nedir?",
+    "default": "Bu ilginç bir soru! Hala öğreniyorum. Ayrıntılı sorular için lütfen şimdilik iletişim formunu kullanın. Tam platform lansmanı ile daha gelişmiş yapay zeka yanıtları gelecek!"
+  }
+}

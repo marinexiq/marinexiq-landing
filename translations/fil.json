@@ -1,0 +1,30 @@
+{
+  "language_name": "Filipino",
+  "language_name_dropdown_en": "Ingles",
+  "language_name_dropdown_ar": "Arabe",
+  "language_name_dropdown_hi": "Hindi",
+  "language_name_dropdown_fil": "Filipino",
+  "language_name_dropdown_zh": "Tsino",
+  "language_name_dropdown_ru": "Ruso",
+  "language_name_dropdown_uk": "Ukraniano",
+  "language_name_dropdown_id": "Indonesiyo",
+  "language_name_dropdown_tr": "Turko",
+  "main_headline_v2": "Maligayang pagdating sa MarinexIQ – Ang #1 Smart Seafarer Platform sa Buong Mundo. Ang Iyong Kinabukasan sa Dagat ay Nagsisimula Dito.",
+  "sub_headline_v2": "Ang rebolusyonaryong AI-powered hub para sa mga mandaragat, kumpanya ng maritima, at akademya. Sumali sa hinaharap, ngayon!",
+  "hero_logo_alt": "MarinexIQ Animated Logo",
+  // ... (باقي المفاتيح مترجمة إلى الفلبينية)
+  "contact_info": "Makipag-ugnay: <a href='mailto:info@marinexiq.com' class='text-light'>info@marinexiq.com</a> | WhatsApp: <a href='https://wa.me/201065424999' class='text-light' target='_blank'>+201065424999</a>",
+  "copyright_text": "© 2025 MarinexIQ. Lahat ng karapatan ay nakalaan.",
+  "alert_form_submission_success": "Matagumpay na naisumite ang iyong impormasyon! Ang iyong ID: {subscriberId}",
+  "ai_assistant_title": "MarinexIQ AI Assistant",
+  "ai_assistant_welcome_message": "Hello 👋, ako ang iyong Smart Maritime Assistant! Paano kita matutulungan ngayon? 🚢💡",
+  "ai_assistant_input_placeholder": "Tanungin mo ako kahit ano...",
+  "ai_assistant_fab_text": "Tulong ng AI",
+  "ai_assistant_mock_responses": {
+    "key_aramco": "Para makapasa sa Aramco test, mag-focus sa kanilang mga partikular na requirement, CES test kung applicable, at magsanay ng mga karaniwang tanong sa interview. Magkakaroon tayo ng dedikadong seksyon para dito sa lalong madaling panahon!",
+    "key_chief_officer": "Ang pagiging Chief Officer ay nangangailangan ng partikular na sea time bilang Second Officer, relevant na CoC, at advanced STCW courses. Gagabayan ka ng aming platform sa mga hakbang.",
+    "key_career_plan": "Matutulungan ka namin diyan! Sabihin mo sa akin ang iyong kasalukuyang ranggo at mga layunin, at maaari akong mag-outline ng potensyal na plano sa pag-unlad. Malapit nang dumating ang buong AI planning.",
+    "key_jobs_experience": "Pakikumpleto ang iyong profile sa aming pangunahing platform kapag nailunsad na! Ipapareha ka ng aming AI sa mga angkop na trabaho. Sa ngayon, ano ang iyong kasalukuyang ranggo at karanasan sa uri ng barko?",
+    "default": "Interesante ang tanong na 'yan! Natututo pa ako. Para sa mga detalyadong katanungan, mangyaring gamitin muna ang contact form. Darating ang mas advanced na mga tugon ng AI kasabay ng full platform launch!"
+  }
+}

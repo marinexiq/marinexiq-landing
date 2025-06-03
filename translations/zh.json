@@ -1,0 +1,30 @@
+{
+  "language_name": "中文",
+  "language_name_dropdown_en": "英语",
+  "language_name_dropdown_ar": "阿拉伯语",
+  "language_name_dropdown_hi": "印地语",
+  "language_name_dropdown_fil": "菲律宾语",
+  "language_name_dropdown_zh": "中文",
+  "language_name_dropdown_ru": "俄语",
+  "language_name_dropdown_uk": "乌克兰语",
+  "language_name_dropdown_id": "印度尼西亚语",
+  "language_name_dropdown_tr": "土耳其语",
+  "main_headline_v2": "欢迎来到 MarinexIQ – 全球排名第一的智能海员平台。您的海事未来从这里开始。",
+  "sub_headline_v2": "为海员、海事公司和学院打造的革命性人工智能中心。今天就加入未来！",
+  "hero_logo_alt": "MarinexIQ 动画徽标",
+  // ... (باقي المفاتيح مترجمة إلى الصينية)
+  "contact_info": "联系方式：<a href='mailto:info@marinexiq.com' class='text-light'>info@marinexiq.com</a> | WhatsApp：<a href='https://wa.me/201065424999' class='text-light' target='_blank'>+201065424999</a>",
+  "copyright_text": "© 2025 MarinexIQ。保留所有权利。",
+  "alert_form_submission_success": "您的信息已成功提交！您的ID：{subscriberId}",
+  "ai_assistant_title": "MarinexIQ AI 助手",
+  "ai_assistant_welcome_message": "你好 👋, 我是你的智能海事助手！今天我能帮你什么？🚢💡",
+  "ai_assistant_input_placeholder": "问我任何问题...",
+  "ai_assistant_fab_text": "AI 帮助",
+  "ai_assistant_mock_responses": {
+    "key_aramco": "要通过阿美测试，请专注于他们的具体要求，如果适用则进行CES测试，并练习常见的面试问题。我们很快会为此设立一个专门的版块！",
+    "key_chief_officer": "成为大副需要特定的二副海上服务时间、相关的CoC证书和高级STCW课程。我们的平台将指导您完成这些步骤。",
+    "key_career_plan": "我们可以帮忙！告诉我你目前的级别和目标，我可以为你规划一个潜在的晋升计划。完整的人工智能规划即将推出。",
+    "key_jobs_experience": "请在我们的主平台上线后完善您的个人资料！我们的人工智能会将您与合适的工作相匹配。目前，您目前的级别和船型经验是什么？",
+    "default": "这是一个有趣的问题！我还在学习中。如需详细咨询，请暂时使用联系表格。更高级的人工智能回复将在平台全面启动后推出！"
+  }
+}

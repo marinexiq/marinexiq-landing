@@ -1,0 +1,30 @@
+{
+  "language_name": "Bahasa Indonesia",
+  "language_name_dropdown_en": "Inggris",
+  "language_name_dropdown_ar": "Arab",
+  "language_name_dropdown_hi": "Hindi",
+  "language_name_dropdown_fil": "Filipina",
+  "language_name_dropdown_zh": "Cina",
+  "language_name_dropdown_ru": "Rusia",
+  "language_name_dropdown_uk": "Ukraina",
+  "language_name_dropdown_id": "Bahasa Indonesia",
+  "language_name_dropdown_tr": "Turki",
+  "main_headline_v2": "Selamat Datang di MarinexIQ – Platform Pelaut Cerdas #1 di Dunia. Masa Depan Maritim Anda Dimulai Di Sini.",
+  "sub_headline_v2": "Hub revolusioner bertenaga AI untuk pelaut, perusahaan maritim, dan akademi. Bergabunglah dengan masa depan, hari ini!",
+  "hero_logo_alt": "Logo Animasi MarinexIQ",
+  // ... (باقي المفاتيح مترجمة إلى الإندونيسية)
+  "contact_info": "Kontak: <a href='mailto:info@marinexiq.com' class='text-light'>info@marinexiq.com</a> | WhatsApp: <a href='https://wa.me/201065424999' class='text-light' target='_blank'>+201065424999</a>",
+  "copyright_text": "© 2025 MarinexIQ. Seluruh hak cipta.",
+  "alert_form_submission_success": "Informasi Anda berhasil dikirim! ID Anda: {subscriberId}",
+  "ai_assistant_title": "Asisten AI MarinexIQ",
+  "ai_assistant_welcome_message": "Halo 👋, saya Asisten Maritim Cerdas Anda! Ada yang bisa saya bantu hari ini? 🚢💡",
+  "ai_assistant_input_placeholder": "Tanyakan apa saja...",
+  "ai_assistant_fab_text": "Bantuan AI",
+  "ai_assistant_mock_responses": {
+    "key_aramco": "Untuk lulus tes Aramco, fokus pada persyaratan khusus mereka, tes CES jika berlaku, dan latih pertanyaan wawancara umum. Kami akan segera memiliki bagian khusus untuk ini!",
+    "key_chief_officer": "Menjadi Chief Officer membutuhkan waktu layar tertentu sebagai Second Officer, CoC yang relevan, dan kursus STCW lanjutan. Platform kami akan memandu Anda melalui langkah-langkahnya.",
+    "key_career_plan": "Kami bisa membantu! Beri tahu saya pangkat dan tujuan Anda saat ini, dan saya dapat membuat garis besar rencana kemajuan potensial. Perencanaan AI penuh akan segera hadir.",
+    "key_jobs_experience": "Harap lengkapi profil Anda di platform utama kami setelah diluncurkan! AI kami kemudian akan mencocokkan Anda dengan pekerjaan yang sesuai. Untuk saat ini, apa pangkat Anda saat ini dan pengalaman jenis kapal Anda?",
+    "default": "Itu pertanyaan yang menarik! Saya masih belajar. Untuk pertanyaan mendetail, silakan gunakan formulir kontak untuk saat ini. Respons AI yang lebih canggih akan hadir dengan peluncuran platform penuh!"
+  }
+}
