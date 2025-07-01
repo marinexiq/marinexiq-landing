@@ -285,6 +285,37 @@ export function initReadinessTest() {
     }
 }
 
+// --- Rotating Globe using Globe.gl ---
+export function initRotatingGlobe() {
+    console.log('[components.js] initRotatingGlobe called.');
+    const container = document.getElementById('globeViz');
+    if (!container || typeof Globe === 'undefined') {
+        console.warn('[components.js] Globe library not loaded or container missing.');
+        return;
+    }
+    const hotspots = [
+        { lat: 1.3521, lng: 103.8198, size: 0.5, color: '#ff5722' },
+        { lat: 23.4241, lng: 53.8478, size: 0.45, color: '#ff9800' },
+        { lat: 52.1326, lng: 5.2913, size: 0.4, color: '#ffc107' },
+        { lat: 29.7604, lng: -95.3698, size: 0.45, color: '#ff5722' },
+        { lat: 60.4720, lng: 8.4689, size: 0.35, color: '#4caf50' },
+        { lat: 35.8617, lng: 104.1954, size: 0.48, color: '#ff5722' },
+        { lat: 20.5937, lng: 78.9629, size: 0.42, color: '#ffc107' },
+        { lat: 12.8797, lng: 121.7740, size: 0.4, color: '#4caf50' }
+    ];
+    const world = Globe()(container)
+        .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
+        .pointOfView({ lat: 20, lng: 0, altitude: 2 })
+        .pointsData(hotspots)
+        .pointLat('lat')
+        .pointLng('lng')
+        .pointColor('color')
+        .pointAltitude('size')
+        .pointRadius(0.4);
+    world.controls().autoRotate = true;
+    world.controls().autoRotateSpeed = 0.4;
+}
+
 // --- Leaflet Job Map ---
 export function initJobMap() {
     console.log('[components.js] initJobMap called.');

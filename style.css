@@ -451,6 +451,27 @@ body.theme-dark .salary-result-container { background: rgba(25,35,50,.8); border
 body.theme-light .job-map-container { background-color: #e0e0e0; }
 body.theme-dark .job-map-container { background-color: #1a2533; }
 
+/* Component: Rotating Globe */
+.globe-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+    .globe-container { height: 300px; }
+}
+
+/* AI Transform Section */
+.ai-transform-placeholder {
+    height: 200px;
+    background: rgba(0,0,0,0.2);
+    border-radius: .5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ccc;
+}
+
 /* Component: Smart Badge */
 .smart-badge-wrapper {
     padding: 1rem;

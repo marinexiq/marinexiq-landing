@@ -3,7 +3,7 @@
 // It orchestrates the initialization of all modules and components.
 
 import { applyInitialTheme, cycleTheme, updateThemeToggleButtonVisuals } from './theme.js';
-import { setLanguage, getInitialLanguage, T } from './i18n.js';
+import { initI18n, setLanguage, getInitialLanguage, T } from './i18n.js';
 import {
     initTypedJS,
     initLottieAnimations,
@@ -11,6 +11,7 @@ import {
     initCounters,
     initSalaryCalculator,
     initReadinessTest,
+    initRotatingGlobe,
     initJobMap,
     initAIAssistant,
     initSubscriptionForm
@@ -27,7 +28,7 @@ async function main() {
     console.log('[main.js] Initial language detected:', initialLang);
     
     // Crucially, setLanguage loads translations and applies them via applyTranslationsToDOM
-    await setLanguage(initialLang); 
+    await initI18n(initialLang);
     console.log('[main.js] setLanguage(initialLang) awaited. Translations should be loaded and applied.');
         
     // Update buttons that depend on translated text
@@ -61,11 +62,14 @@ async function main() {
     initSalaryCalculator(); 
     console.log('[main.js] Salary Calculator initialization attempted.');
     
-    initReadinessTest(); 
+    initReadinessTest();
     console.log('[main.js] Readiness Test initialization attempted.');
-    
-    initJobMap(); 
-    console.log('[main.js] Job Map initialization attempted.'); 
+
+    initRotatingGlobe();
+    console.log('[main.js] Rotating Globe initialization attempted.');
+
+    initJobMap();
+    console.log('[main.js] Job Map initialization attempted.');
     
     initAIAssistant(); 
     console.log('[main.js] AI Assistant initialization attempted.');

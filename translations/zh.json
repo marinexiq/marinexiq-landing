@@ -27,4 +27,8 @@
     "key_jobs_experience": "请在我们的主平台上线后完善您的个人资料！我们的人工智能会将您与合适的工作相匹配。目前，您目前的级别和船型经验是什么？",
     "default": "这是一个有趣的问题！我还在学习中。如需详细咨询，请暂时使用联系表格。更高级的人工智能回复将在平台全面启动后推出！"
   }
+,
+  "job_opportunities_text": "job opportunities",
+  "ai_transform_title": "From Plan to Reality: Transform with AI",
+  "ai_transform_desc": "Watch as our AI converts your data into tangible results."
 }
