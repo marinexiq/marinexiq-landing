@@ -29,6 +29,8 @@
       <li><a class="dropdown-item" href="#" data-lang="uk">Українська</a></li>
       <li><a class="dropdown-item" href="#" data-lang="id">Bahasa Indonesia</a></li>
       <li><a class="dropdown-item" href="#" data-lang="tr">Türkçe</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="es">Español</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="fr">Français</a></li>
     </ul>
   </div>
 
@@ -59,6 +61,10 @@
         </div>
     </div>
   </header>
+
+  <section class="globe-section text-center" data-aos="zoom-in">
+      <div id="globeViz" class="globe-container"></div>
+  </section>
 
   <main class="container page-content-container">
     <section class="ai-stats-counter-section text-center" data-aos="fade-up">
@@ -111,6 +117,12 @@
             </div>
             <div id="salary-result" class="salary-result-container mt-4 text-center" style="display: none;"><p data-key="salary_calc_result_prefix"></p><h3 id="estimated-salary" class="display-5 fw-bold"></h3><small data-key="salary_calc_disclaimer"></small></div>
         </div>
+    </section>
+
+    <section class="ai-transform-section text-center" data-aos="fade-up">
+        <h2 class="section-title" data-key="ai_transform_title"></h2>
+        <p class="lead mb-4" data-key="ai_transform_desc"></p>
+        <div class="ai-transform-placeholder">AI Animation Placeholder</div>
     </section>
 
     <section class="trust-section" data-aos="fade-up">
@@ -213,7 +225,11 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  
+  <script src="https://unpkg.com/i18next@21.9.1/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@3.0.2/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/three@0.156.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@2.42.0/dist/globe.gl.min.js"></script>
+
   <script type="module" src="js/main.js" defer></script>
 </body>
 </html>

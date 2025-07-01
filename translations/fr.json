@@ -1,5 +1,5 @@
 {
-  "language_name": "English",
+  "language_name": "Français",
   "language_name_dropdown_en": "English",
   "language_name_dropdown_ar": "Arabic",
   "language_name_dropdown_hi": "Hindi",
@@ -10,7 +10,7 @@
   "language_name_dropdown_id": "Indonesian",
   "language_name_dropdown_tr": "Turkish",
   "language_name_dropdown_es": "Spanish",
-  "language_name_dropdown_fr": "French",
+  "language_name_dropdown_fr": "Français",
   "main_headline_v2": "Welcome to MarinexIQ – The #1 Smart Seafarer Platform Globally. Your Maritime Future Starts Here.",
   "sub_headline_v2": "The revolutionary AI-powered hub for seafarers, maritime companies, and academies. Join the future, today!",
   "hero_logo_alt": "MarinexIQ Animated Logo",
@@ -56,7 +56,6 @@
   "job_map_title": "Where Are The Jobs?",
   "job_map_subtitle": "Interactive map showing maritime job hotspots globally (AI-Powered - Mock Data).",
   "job_map_note": "Map data is illustrative. Actual opportunities may vary.",
-  "job_opportunities_text": "job opportunities",
   "salary_calc_title": "Smart Salary Estimator (Beta)",
   "salary_calc_subtitle": "Get an idea of your potential earnings in seconds!",
   "salary_calc_rank_label": "Your Rank:",
@@ -77,8 +76,6 @@
   "salary_calc_rank_cook": "Chief Cook / Cook",
   "salary_calc_result_prefix": "Estimated Monthly Salary (USD):",
   "salary_calc_disclaimer": "Note: This is a rough estimate based on general market data. Actual salaries may vary.",
-  "ai_transform_title": "From Plan to Reality: Transform with AI",
-  "ai_transform_desc": "Watch as our AI converts your data into tangible results.",
   "trust_section_title": "Trusted by the Maritime World",
   "stat_global_seafarers_value": "1.8M+",
   "stat_global_seafarers_label": "Seafarers Worldwide",
@@ -177,4 +174,8 @@
     "key_jobs_experience": "Please complete your profile on our main platform once launched! Our AI will then match you with suitable jobs. For now, what's your current rank and vessel type experience?",
     "default": "That's an interesting question! I'm still learning. For detailed queries, please use the contact form for now. More advanced AI responses are coming with the full platform launch!"
   }
+,
+  "job_opportunities_text": "job opportunities",
+  "ai_transform_title": "From Plan to Reality: Transform with AI",
+  "ai_transform_desc": "Watch as our AI converts your data into tangible results."
 }
